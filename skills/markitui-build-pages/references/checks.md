@@ -23,6 +23,9 @@ Across pages:
 
 - [ ] Store data (items, prices, tax, totals, delivery dates) is consistent across cart, checkout and confirmation.
 - [ ] Each page has one opener (hero or header) and the same navbar and footer.
+- [ ] Each archive page has exactly one ArchiveHeader or ArchiveSidebar at the top and at most one ArchivePagination at the bottom; categories and search show once; every archive component's `Breakpoint` matches its block, in both xl and base.
+- [ ] Archive and detail pages use only their own content type's blocks; no Featured-page blocks on archive pages.
+- [ ] No detail page has a Header above a body that already has its own header.
 
 ## Visual check
 

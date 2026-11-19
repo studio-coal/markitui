@@ -19,7 +19,7 @@ Turn a brief, a sitemap, a page list, a reference website or an existing website
 
 library block → project block → page composed in a Breakpoint component → detached `{Page} / xl` and `{Page} / base` frames (and `{Page} / md` if the user wants tablet) in one Section per page → handoff notes.
 
-The file's own documentation is the source of truth. At the start of every run, read the **Composing pages**, **Layout** and **Breakpoints** doc frames on the Documentation page, and the **Navigation** doc frame for the list of block categories. If anything in this skill disagrees with them, follow the file.
+The file's own documentation is the source of truth. At the start of every run, read the **Composing pages**, **Layout** and **Breakpoints** doc frames on the Documentation page, and the **Navigation** doc frame for the list of block categories. When the site has a blog, changelog, customer stories or events, also read the **Archive pages** doc frame on the Archive Components page and the **Assembling archive and detail pages** doc frame on the Blog (Archive / Post) page. If anything in this skill disagrees with them, follow the file.
 
 ## Before you start
 
@@ -56,9 +56,9 @@ Use project blocks by default. Use library blocks directly only if the user asks
 
 ## Workflow
 
-**Phase 1: Page plan (stop for approval).** Read `references/page-planning.md`. The plan states the breakpoints the user chose. Inventory the library, choose blocks for each page, and present the plan table. When the input is an existing website to rebuild, read `references/existing-site.md` first; it produces the same plan. **Stop and wait** for approval or changes.
+**Phase 1: Page plan (stop for approval).** Read `references/page-planning.md`. The plan states the breakpoints the user chose. Inventory the library, choose blocks for each page, and present the plan table. For Blog, Changelog, Customer Stories or Events & Webinars pages, read `references/content-types.md` and plan an archive page and a detail template for each. When the input is an existing website to rebuild, read `references/existing-site.md` first; it produces the same plan. **Stop and wait** for approval or changes.
 
-**Phase 2: Project blocks.** Read `references/project-blocks.md`. Clone each chosen library block into a project block, rename it, and adapt it in the master. Build the navbar, menus and footer as project blocks too. If the user chose md, read `references/responsive.md` and add an md variant to every project block the md pages use.
+**Phase 2: Project blocks.** Read `references/project-blocks.md`. Clone each chosen library block into a project block, rename it, and adapt it in the master. Build the navbar, menus and footer as project blocks too. For archive blocks, set the archive components (header, sidebar, pagination) in the project block master as `references/content-types.md` describes. If the user chose md, read `references/responsive.md` and add an md variant to every project block the md pages use.
 
 **Phase 3: Compose the pages.** Read `references/composing.md` and `references/content.md`. Build each page at xl in a Breakpoint component, duplicate it for base (and md, following `references/responsive.md`), detach, name, wrap in a Section, and lay out the canvas.
 
@@ -70,6 +70,7 @@ Use project blocks by default. Use library blocks directly only if the user asks
 
 - `references/page-planning.md`: page anatomy, choosing blocks, the plan table. Phase 1.
 - `references/existing-site.md`: rebuilding an existing website. Phase 1, when the input is a live site.
+- `references/content-types.md`: archive and detail pages for Blog, Changelog, Customer Stories and Events & Webinars; ArchiveHeader, ArchiveSidebar and ArchivePagination. Phases 1–3, when the site has any of them.
 - `references/project-blocks.md`: cloning, naming, what to change in the master, design rules. Phase 2.
 - `references/responsive.md`: the md option, adding md variants to project blocks, assembling md pages with the Breakpoint component. Opening questions, Phase 2 and Phase 3, when md is chosen.
 - `references/composing.md`: Breakpoint component, xl and base, detaching, naming, canvas layout. Phase 3.
@@ -81,7 +82,7 @@ Use project blocks by default. Use library blocks directly only if the user asks
 
 - Ask the opening questions the prompt doesn't answer, including responsive variants, before planning.
 - Stop after the plan and wait for approval. Never build pages from an unapproved plan.
-- Never edit library blocks or base components; all changes go into project blocks or instance overrides.
+- Never edit library blocks, base components or archive components; all changes go into project blocks or instance overrides.
 - Every page has an xl and a base frame (and an md frame if chosen) built from the same blocks, and each block's Breakpoint matches its frame.
 - Everything stays on MarkitUI variables and text styles. No raw colours, spacing, radii or font settings.
 - Real or believable copy, never Lorem ipsum. No real brand names or logos that aren't the user's.

@@ -28,6 +28,8 @@ Attach to the block or element whose behaviour isn't visible in a static frame. 
 - Accordions: "One item open at a time; first item open by default."
 - Pricing toggles: "Monthly/Annually switches all plan prices."
 - Filters, variant pickers, quantity steppers, cart and checkout steps, forms (fields, validation, success state), CMS lists (sort order, page size).
+- Archives: "Newest first, 12 per page; Load More appends the next 12." or "Numbered pagination; each page has its own URL (/blog/page/2)." What each category pill, filter and search does, and the empty state when nothing matches.
+- Detail templates: which CMS fields fill the header, body and sidebar groups; the table of contents is built from the article's H2s; for events, what changes once the event is over (registration replaced by the recording).
 
 ## Content annotations (category Content)
 
