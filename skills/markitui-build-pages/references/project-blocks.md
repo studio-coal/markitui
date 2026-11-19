@@ -11,6 +11,7 @@ For each section in the approved plan:
    - sections: `{Project} / Section / {Category} / {Layout}` (e.g. `Acme / Section / Features / Bento`)
    - globals: `{Project} / Global / Navbar`, `{Project} / Global / Footer`
    - menus: `{Project} / Navigation / Menu / {Name}` (e.g. `Acme / Navigation / Menu / Product`)
+   - archive and detail blocks: `{Project} / Section / {Content type} / {Archive|Post|Release|Event} / {Part}` (e.g. `Acme / Section / Blog / Archive / List`, `Acme / Section / Events & Webinars / Event / Body / Agenda`)
    - two project blocks from the same category and layout: add a short purpose, `Acme / Section / Features / Bento / Platform`
 3. **Description:** `{Project block name}. Source: {source library block name}.`
 4. **Keep the variant properties:** `Breakpoint = xl | base` (plus `md` if the user chose tablet), and `Step` on flow blocks.
@@ -23,6 +24,7 @@ For each section in the approved plan:
 | Copy shared by every page using the block (footer links, navbar labels) | Button labels and links |
 | Images that are the same everywhere (logo, brand visuals) | Images specific to the page |
 | Component property defaults | Visibility toggles (`Show …`) and variant choices (e.g. Section Title layout) |
+| Archive navigation that isn't in the block yet (an ArchivePagination, an ArchiveHeader above the Grid), in every variant | ArchiveHeader title and description, Controls slot content (set in the xl **and** base instance), sidebar groups to hide |
 
 Make structural changes in the master so the block stays reusable; keep page-specific changes on instances.
 

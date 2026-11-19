@@ -23,5 +23,8 @@
 
 ## Dates and numbers elsewhere
 
-- Blog, changelog and event dates are recent and in the right order (newest first in archives); upcoming events are in the future.
+- Blog, changelog and event dates are recent and in the right order (newest first in archives); upcoming events are in the future, on-demand recordings in the past.
+- Archive categories and controls fit the content type (topics for a blog, product areas for a changelog, products or industries for customer stories, event types for events), and every item's category is one of them.
+- Customer stories carry a named (fictional unless supplied) customer, a quote and plausible results. Changelog entries carry a version or date and a product area. Events carry a date, time zone, format (in person, online) and speakers.
+- Keep post titles and H2 headings short: the table of contents lists the H2s.
 - Stats and metrics are plausible and consistent wherever they repeat.
